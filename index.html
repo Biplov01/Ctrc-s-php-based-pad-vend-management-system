@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSV File Upload Form</title>
+	<style>
+		body {
+			background-color: #FFF;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		}
+
+		h2 {
+			margin-top: 0;
+			text-align: center;
+			font-family: Arial, sans-serif;
+			font-weight: bold;
+			font-size: 36px;
+		}
+
+		label {
+			display: block;
+			font-family: Arial, sans-serif;
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+
+		input[type="file"] {
+			display: block;
+			margin-bottom: 10px;
+			font-family: Arial, sans-serif;
+			font-size: 18px;
+			padding: 5px;
+			border-radius: 5px;
+			border: none;
+			background-color: #f2f2f2;
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 18px;
+			margin-top: 10px;
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #45a049;
+		}
+
+		.logo {
+			display: inline-block;
+			width: 80px;
+			height: 80px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		.logo-left {
+			float: left;
+		}
+
+		.logo-right {
+			float: right;
+		}
+
+		.logo img {
+			width: 100%;
+			height: auto;
+		}
+
+		.instructions {
+			background-color: #fff;
+			padding: 10px;
+			border-radius: 5px;
+			margin-top: 20px;
+			font-family: Arial, sans-serif;
+			font-size: 18px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="logo logo-left">
+		 <img src="left-logo.png" alt="Logo">
+	</div>
+	<div class="logo logo-right">
+		 <img src="right-logo.png" alt="Logo">
+	</div>
+	<div class="container">
+		<h1>Welcome to</h1>
+
+		<h2>Computer Technology and Robotonix Club CTRC Pad Vending Management System</h2>
+		<form action="upload.php" method="post" enctype="multipart/form-data">
+			<label for="csvfile">Select college students details containing CSV file:</label>
+			<input type="file" name="csvfile" id="csvfile">
+			<input type="submit" value="Upload File">
+		</form>
+		<div class="instructions">
+			<p><strong>Instructions:</strong></p>
+			<p>i) Select college students details containing CSV file.</p>
+			<p>ii) Upload it and click submit.</p>
+			<p>iii) Done!</p>
+		</div>
+	</div>
+</body>
+</html>
